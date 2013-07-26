@@ -10,5 +10,5 @@ lapis.serve class extends lapis.Application
     render: true
 
   [new: "/new"]: =>
-    Breweries\create name: @params.name, description: "Brewery In Vermont"
+    Breweries\create name: @params.name
     redirect_to: @url_for "index"

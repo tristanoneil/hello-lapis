@@ -5,7 +5,7 @@ import create_table, types from require "lapis.db.schema"
     create_table "breweries", {
       { "id", types.serial }
       { "name", types.text }
-      { "description", types.text }
+      { "description", types.text null: true }
 
       "PRIMARY KEY (id)"
     }
