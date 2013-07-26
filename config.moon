@@ -1,7 +1,7 @@
 import config from require "lapis.config"
 
 config "development", ->
-  postgresql_url "postgres://root:@127.0.0.1/goodbier"
+  postgresql_url "postgres://postgres:orange@127.0.0.1/goodbier"
   port 8080
 
 config "production", ->
